@@ -1,0 +1,26 @@
+#include <stdio.h>
+float perMarks( int a , int b, int c);
+
+int main(){
+
+    int a;
+    int b;
+    int c;
+    printf("Type your sanskrit marks ");
+    scanf("%d" , &a);
+    printf("Type your maths marks ");
+    scanf("%d" , &b);
+    printf("Type your english marks ");
+    scanf("%d" , &c);
+
+   
+
+    perMarks(a, b, c);
+
+    return 0;
+}
+float perMarks(int a, int b, int c){
+   float m = ((a+b+c)/3);
+   printf("your p makrs is %f" , m);
+    
+}
