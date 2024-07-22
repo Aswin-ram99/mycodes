@@ -1,0 +1,30 @@
+#include <stdio.h>
+ 
+int countOdd(int arr[] , int n);
+ int main(){
+int arr[4];
+printf("type 1st number ");
+scanf("%d" , &arr[0]);
+printf("type 2nd number ");
+scanf("%d" , &arr[1]);
+printf("type 3rd number ");
+scanf("%d" , &arr[2]);
+printf("type 4th number ");
+scanf("%d" , &arr[3]);
+printf("type 5th number ");
+scanf("%d" , &arr[4]);
+countOdd(arr, 4);
+    
+return 0;
+ }
+int countOdd(int arr[] , int n){
+    int count =0;
+    for(int i=1; i<=5; i++){
+        if (arr[i-1] % 2==1){
+            count++;
+        }
+        
+    }
+    printf("%d number/s is/are odd" , count );
+    
+}
